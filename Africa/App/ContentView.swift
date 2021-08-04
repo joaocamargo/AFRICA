@@ -56,6 +56,9 @@ struct ContentView: View {
                                 AnimalListItemView(animal: animal)
                             }
                         }
+                        HStack(alignment: .center) {
+                            CreditsView().modifier(CenterModifier())
+                        }
                     }
                 } else {
                     ScrollView(.vertical, showsIndicators: false){
@@ -70,6 +73,7 @@ struct ContentView: View {
                         .animation(.easeIn)
                     ///*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
                     }
+
                 } // : list
             } //group
             
